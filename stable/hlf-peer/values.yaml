@@ -77,6 +77,15 @@ peer:
     client:
       enabled: "false"
 
+  metrics:
+    enable: "true"
+    listenAddress: "127.0.0.1:8125"
+    provider: "statsd"
+    statsd:
+      network: "udp"
+      address: ""
+      prefix: ""
+
 # Secrets references, empty by default, fill in with your secrets (particularly adminCert) or add Peer Admin certificate manually after launching chart.
 secrets:
   ## These secrets should contain the Orderer crypto materials and credentials
