@@ -56,6 +56,15 @@ ord:
     client:
       enabled: "false"
 
+  metrics:
+    enable: "true"
+    listenAddress: "127.0.0.1:8125"
+    provider: "statsd"
+    statsd:
+      network: "udp"
+      address: ""
+      prefix: ""
+
 
 secrets:
   ## These secrets should contain the Orderer crypto materials and credentials
